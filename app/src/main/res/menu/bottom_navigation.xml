@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navSettings"
+        android:icon="@drawable/icon_settings"
+        android:title="Settings"/>
+
+    <item
+        android:id="@+id/navItems"
+        android:icon="@drawable/icon_business_center"
+        android:title="Items"/>
+
+    <item
+        android:id="@+id/navArchive"
+        android:icon="@drawable/icon_archive"
+        android:title="Archive"/>
+
+    <item
+        android:id="@+id/navChats"
+        android:icon="@drawable/icon_chat_bubble"
+        android:title="Chat"/>
+
+</menu>

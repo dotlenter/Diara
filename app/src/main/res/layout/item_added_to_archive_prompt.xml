@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Item Added to your Archive"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:id="@+id/txtItemArchive"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemArchive"
+        android:id="@+id/cardItemContainer"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/diaraDefault"
+                android:layout_above="@id/detailContainer"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/numLikesContainer"
+                android:layout_alignTop="@id/numLikesContainer"
+                android:background="@drawable/default_white_circular"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+                <TextView
+                    android:id="@+id/textNumArchive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:maxLines="1"
+                    android:text="1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/diaraBlue"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/icStar"
+                    />
+                <ImageView
+                    android:id="@+id/icStar"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_star_black_24dp"
+                    android:backgroundTint="@color/diaraBlue"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageContainer"
+                android:layout_alignEnd="@id/imageContainer"
+                android:background="@drawable/default_white_circular"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/numLikesContainer"
+                >
+                <TextView
+                    android:id="@+id/textNumLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:maxLines="1"
+                    android:text="1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/icHeart"
+                    />
+                <ImageView
+                    android:id="@+id/icHeart"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_check_outline"
+                    android:backgroundTint="@color/red"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/detailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textDistance"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sellerImage"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:text="20KM Away"
+                    android:textAlignment="center"
+                    android:textColor="@color/diaraDefault"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_toEndOf="@+id/sellerImage"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Ryzen 3"
+                    android:textColor="@color/black"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textItemName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_toEndOf="@id/sellerImage"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/dummy_prod" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sellerImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/me" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="₱1,000.00"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardItemContainer"
+        android:layout_marginTop="20dp"
+        android:text="OK"
+        android:background="@drawable/default_button"
+        android:textColor="@color/white"
+        android:id="@+id/btnOKArchived"
+        />
+</RelativeLayout>

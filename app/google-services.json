@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "484638804465",
+    "firebase_url": "https://diara-666.firebaseio.com",
+    "project_id": "diara-666",
+    "storage_bucket": "diara-666.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484638804465:android:7174c58e16b7058f865c50",
+        "android_client_info": {
+          "package_name": "com.example.zo.diara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484638804465-1vludmel0ihbmbbo0crsktp22h4hae8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zo.diara",
+            "certificate_hash": "1632b648da7d8b4663ca3fdd159c3c24a7830bf3"
+          }
+        },
+        {
+          "client_id": "484638804465-vluvn69a9fadjd8fktncfeu2j9l93n81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANpu7ySc04ccJ2WHJ3vNTAI9KKDJdvXC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484638804465-vluvn69a9fadjd8fktncfeu2j9l93n81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

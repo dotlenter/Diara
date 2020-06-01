@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardItemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="430dp"
+                    android:background="@color/diaraDefault"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/numLikesContainer"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toStartOf="@id/numLikesContainer"
+                    android:background="@drawable/default_white_circular"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/icStar"
+                        android:layout_width="18sp"
+                        android:layout_height="18sp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_star_black_24dp"
+                        android:backgroundTint="@color/diaraBlue" />
+
+                    <TextView
+                        android:id="@+id/textNumArchive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/icStar"
+                        android:maxLines="1"
+                        android:text="1000"
+                        android:textAlignment="center"
+                        android:textColor="@color/diaraBlue"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/numLikesContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/imageContainer"
+                    android:layout_alignBottom="@id/imageContainer"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/default_white_circular"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/icHeart"
+                        android:layout_width="18sp"
+                        android:layout_height="18sp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_check_outline"
+                        android:backgroundTint="@color/red" />
+
+                    <TextView
+                        android:id="@+id/textNumLikes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@id/icHeart"
+                        android:maxLines="1"
+                        android:text="1000"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/detailContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/imageContainer"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="1dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Ryzen 3"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textItemName"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="1dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="@string/dummy_prod" />
+
+
+                    <TextView
+                        android:id="@+id/txtSeller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELLER"
+                        android:layout_below="@id/textDescription"
+                        android:layout_marginTop="45dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <View
+                        android:layout_width="300dp"
+                        android:layout_height="3dp"
+                        android:background="@color/slightWhite"
+                        android:layout_below="@id/txtSeller"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp" />
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/txtSeller"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/userDetailContainer">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@color/diaraDefault"
+                            android:id="@+id/sellerImage" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="John Mar Lorenzo"
+                            android:textColor="@color/black"
+                            android:layout_toEndOf="@id/sellerImage"
+                            android:layout_marginStart="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:id="@+id/textSellerName" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lorenzojohnmar321@gmail.com"
+                            android:layout_alignStart="@id/textSellerName"
+                            android:layout_below="@id/textSellerName"
+                            android:textSize="12sp"
+                            android:id="@+id/textSellerEmail" />
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:drawableEnd="@drawable/icon_arrow_left"
+                            android:drawableTint="@color/nearBlack"
+                            android:layout_marginEnd="20dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:weightSum="6"
+                        android:layout_below="@id/userDetailContainer"
+                        android:id="@+id/commentTextContainer">
+
+                        <EditText
+                            android:id="@+id/textComment"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/default_editext"
+                            android:padding="10dp"
+                            android:gravity="top|start"
+                            android:hint="Comment here..."
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="4"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <RelativeLayout
+                            android:id="@+id/btnAddComment"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/default_button"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_weight="2">
+
+                            <TextView
+                                android:id="@+id/commentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:text="Add Comment" />
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:id="@+id/commentLoading"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/loadgif2"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                        <!--<br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                            android:id="@+id/btnAddComment"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="2"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/default_button"
+                            android:layout_marginStart="10dp"
+                            android:text="Add Comment"
+                            android:textColor="@color/white"
+                            android:padding="4dp"
+                            android:textAlignment="center"
+                            app:spinning_bar_width="1dp"
+                            app:spinning_bar_color="@color/diaraFade"
+                            app:spinning_bar_padding="6dp"
+                            />-->
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COMMENTS"
+                        android:layout_below="@id/commentTextContainer"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/userCommentsRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtComment"
+                        android:layout_marginTop="10dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <View
+                        android:layout_width="300dp"
+                        android:layout_height="3dp"
+                        android:background="@color/slightWhite"
+                        android:layout_below="@id/userDetailContainer"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="₱1,000.00"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

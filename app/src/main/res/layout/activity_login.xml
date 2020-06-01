@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginMainContainer"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/intro_logoHeader"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/diara_prelogo_black"
+                android:contentDescription="@string/app_logo" />
+
+            <TextView
+                android:id="@+id/textAppname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intro_logoHeader"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/arciform"
+                android:padding="3dp"
+                android:text="@string/diara"
+                android:textColor="#000"
+                android:textSize="34sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAppname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp">
+
+                <TextView
+                    android:id="@+id/textEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textEmail"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/default_editext"
+                    android:inputType="text"
+                    android:padding="9dp"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtEmail"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPassword"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/default_editext"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:padding="9dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnProceedLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPassword"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/default_button"
+                    android:drawableEnd="@drawable/proceed_white_24dp"
+                    android:padding="18dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="@string/proceed"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/btnCreateAcct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/open_sans_semibold"
+        android:onClick="toSignUp"
+        android:text="@string/create_account"
+        android:textColor="@color/diaraDefault"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/btnForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/forgot_password"
+        android:textColor="@color/diaraDefault"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

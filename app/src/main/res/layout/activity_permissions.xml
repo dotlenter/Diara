@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    tools:context=".PermissionsActivity">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/txtELoc"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_my_location_black_24dp"
+        />
+    <TextView
+        android:id="@+id/txtELoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtInfoPerm"
+        android:text="Enable Location"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/txtInfoPerm"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="In order to use Diara you need to enable your location."
+        android:textSize="18sp"
+        android:layout_above="@+id/btnEnableLoc"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/btnEnableLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enbloc"
+        android:background="@drawable/default_button"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        />
+
+</RelativeLayout>

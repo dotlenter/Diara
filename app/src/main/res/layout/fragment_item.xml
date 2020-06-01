@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ItemFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/button_container"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnRewind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@+id/btnSkip"
+                    android:src="@drawable/ic_replay_black_24dp"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="mini"
+                    app:rippleColor="#225BC9FA" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSkip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/dividerView"
+                    android:src="@drawable/icon_close"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="#22ED7563" />
+
+
+                <View
+                    android:id="@+id/dividerView"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/dividerView"
+                    android:src="@drawable/icon_check_outline"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="#226FE2B3" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnBookMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/btnLike"
+                    android:src="@drawable/ic_star_black_24dp"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="mini"
+                    app:rippleColor="#225BC9FA" />
+
+            </RelativeLayout>
+
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:id="@+id/cardStack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button_container"
+                android:clipToPadding="false"
+                android:padding="4dp">
+
+            </com.yuyakaido.android.cardstackview.CardStackView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imgLoadGif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/loadgif3"
+                android:scaleType="centerInside"
+                android:background="#fafafa"
+                />
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

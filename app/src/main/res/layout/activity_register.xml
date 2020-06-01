@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerMainContainer"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEmail"
+                app:errorEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/textEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/default_editext"
+                    android:inputType="textEmailAddress"
+                    android:textSize="29sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tilEmail"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPassword"
+                app:errorEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/default_editext"
+                    android:inputType="textPassword"
+                    android:textSize="29sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtConfirmPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tilPassword"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/confirm_password"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtConfirmPass"
+                app:errorEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/textConfirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/default_editext"
+                    android:inputType="textPassword"
+                    android:textSize="29sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--
+                    <TextView
+                        android:id="@+id/txtFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textConfirmPass"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/first_name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/textFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtFirstName"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/default_editext"
+                        android:inputType="text"
+                        android:textSize="29sp" />
+
+                    <TextView
+                        android:id="@+id/txtMiddleName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textFirstName"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/middle_name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/textMiddileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtMiddleName"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/default_editext"
+                        android:inputType="text"
+                        android:textSize="29sp" />
+
+                    <TextView
+                        android:id="@+id/txtLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textMiddileName"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/last_name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/textLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtLastName"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/default_editext"
+                        android:inputType="text"
+                        android:textSize="29sp" />
+                        -->
+            <TextView
+                android:id="@+id/txtDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tilConfirmPass"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/linearDOB"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDateOfBirth"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <EditText
+                    android:id="@+id/textDateOfBirth"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/default_editext"
+                    android:enabled="false"
+                    android:hint="@string/dd_mm_yyyy"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/btnSelectDate"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/default_circular_button"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/select_date"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearDOB"
+                android:text="@string/by_signing_up_you_agree_to_our_terms_and_services"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/default_button"
+        android:drawableEnd="@drawable/proceed_white_24dp"
+        android:padding="18dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/register"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="19sp" />
+</RelativeLayout>

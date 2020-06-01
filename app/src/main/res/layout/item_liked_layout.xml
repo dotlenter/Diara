@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/itemHeadsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemHeadImgContainer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@color/diaraDefault"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:id="@+id/textItemTitle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Item 1..."
+            android:layout_below="@+id/itemHeadImgContainer"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

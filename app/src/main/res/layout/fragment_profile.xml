@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp">
+
+            <LinearLayout
+                android:id="@+id/btnAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dividerView2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/default_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:longClickable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_white_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List a New Item"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/imageWrapper"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="visible">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnChoosePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/default_white_circular"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_picture"
+                    android:tint="@color/red"
+                    app:fabSize="mini" />
+
+                <TextView
+                    android:id="@+id/textFirstLetter"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_alignStart="@+id/imgUserImage"
+                    android:layout_alignTop="@+id/imgUserImage"
+                    android:layout_alignEnd="@+id/imgUserImage"
+                    android:layout_alignBottom="@+id/imgUserImage"
+                    android:gravity="center"
+                    android:text="N"
+                    android:textColor="@color/slightWhite"
+                    android:textSize="50sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserImage"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:src="@color/diaraDefault" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selectionWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAddress"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:id="@+id/buttonDivider"
+                    android:layout_width="2dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@id/buttonDivider"
+                    android:background="@drawable/default_circular_button"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_person_black_24dp"
+                    app:fabSize="normal" />
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/buttonDivider"
+                    android:background="@drawable/default_circular_button"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_settings"
+                    android:tint="@color/white"
+                    app:fabSize="normal" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="No Location Available"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageWrapper"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Nodner Rendon"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textUsername"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFullName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Standard User"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtCurrentSelling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAddItem"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Currently Selling" />
+
+            <View
+                android:id="@+id/dividerView2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/selectionWrapper"
+                android:layout_marginTop="20dp"
+                android:background="@color/nearBlack" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycListings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtCurrentSelling"
+                android:layout_marginTop="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imgLoad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtCurrentSelling"
+                android:src="@drawable/loadgif2"
+                android:background="#fafafa"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_alignBottom="@id/textFullName"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/textFullName"
+                android:src="@drawable/verified_green_24dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zhihu.android:matisse:0.5.2-beta4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1d8160d2fb6cd7a4f6e01783d6dd05c/jetified-matisse-0.5.2-beta4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1d8160d2fb6cd7a4f6e01783d6dd05c/jetified-matisse-0.5.2-beta4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1d8160d2fb6cd7a4f6e01783d6dd05c/jetified-matisse-0.5.2-beta4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zhihu.android/matisse/0.5.2-beta4/8720dff48d23924b96c204ea4bc0f196ebb6030e/matisse-0.5.2-beta4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zhihu.android/matisse/0.5.2-beta4/ef68efc0a699845e12f5d0762541504c0f7e9ba2/matisse-0.5.2-beta4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:outlineAmbientShadowColor="@color/nearBlack"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardRelativeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <ImageView
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/diaraDefault"
+                android:layout_above="@id/detailContainer"
+                />
+
+            <RelativeLayout
+                android:id="@+id/detailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/textItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is the item title"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textItemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is the Description..."
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_below="@id/textItemTitle"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="₱1,000.00"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

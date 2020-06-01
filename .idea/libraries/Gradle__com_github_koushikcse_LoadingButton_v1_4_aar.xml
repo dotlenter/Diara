@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.koushikcse:LoadingButton:v1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a1590e446de93b125262cff18f4f460/jetified-LoadingButton-v1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a1590e446de93b125262cff18f4f460/jetified-LoadingButton-v1.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.koushikcse/LoadingButton/v1.4/9c5d183845f2a9841d8ec06f34ee5d8e8659b653/LoadingButton-v1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

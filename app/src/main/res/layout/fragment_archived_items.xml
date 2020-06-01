@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArchivedItems">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtArch"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Your Archive Box"
+            android:drawableEnd="@drawable/icon_archive"
+            android:drawableTint="#BABABA"
+            android:textSize="18sp"
+            android:background="@drawable/default_white_circular"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycArchivedItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtArch"
+            android:layout_marginTop="5dp"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imgLoad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadgif2"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/txtArch"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

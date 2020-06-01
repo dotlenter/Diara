@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Diara</string>
+    <string name="diara">Diara</string>
+
+    <!--
+     Preference Configuration
+     -->
+    <string name="pref_file">com.example.zo.diara.preference_file</string>
+    <string name="pref_loginStatus">com.example.zo.diara.preference_login_status</string>
+    <string name="pref_token">com.example.zo.diara.preference_token</string>
+    <string name="pref_user_id">com.example.zo.diara.preference_user_id</string>
+    <string name="pref_username">com.example.zo.diara.preference_username</string>
+    <string name="pref_distance">com.example.zo.diara.prefered_distance</string>
+    <string name="pref_user_image_url">com.example.zo.diara.user_image</string>
+    <string name="pref_filter">com.example.zo.diara.filter</string>
+    <string name="pref_price_range_min">com.example.zo.diara.price_range_min</string>
+    <string name="pref_price_range_max">com.example.zo.diara.price_range_max</string>
+
+    <string name="app_logo">app_logo</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="proceed">Proceed</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="home">Home</string>
+    <string name="items">Items</string>
+    <string name="profile">Profile</string>
+    <string name="Kilometers">KM</string>
+    <string name="Meteres">M</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="select_date">Select Date</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="by_signing_up_you_agree_to_our_terms_and_services">By signing up you agree to our Terms and Services</string>
+    <string name="nuf">No User Found!</string>
+    <string name="dummy_prod">Design is an evolutionary process, and filler text is just one tool in your progress-pushing arsenal. Use it where it makes sense to use it, and pull it once the natural process indicates that it’s time to roll out a descendant built with real content.</string>
+    <string name="internetConnPrompt">Internet connection problem. Please make sure you have an active internet connection.</string>
+    <string name="unavailableacct">This account is not available anymore.</string>
+    <string name="enbloc">Enable Location</string>
+    <string name="registered_successfully">Registered Successfully!</string>
+    <string name="log_me_in">Log me in</string>
+    <string name="settings">Settings</string>
+    <string name="chat">Chat</string>
+    <string name="account_settings">ACCOUNT SETTINGS</string>
+    <string name="discovery">DISCOVERY</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="item_title">Item Title</string>
+    <string name="unlimited_likes_amp_more"><![CDATA[Unlimited Likes & More!]]></string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="report_a_problem">Report a Problem</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="_30km">30KM</string>
+    <string name="maximum_distance">Maximum Distance</string>
+    <string name="near_first">Near first</string>
+    <string name="item_discovery">Item Discovery</string>
+    <string name="diara_ph">diara.ph</string>
+    <string name="notestablished">Connection not established!</string>
+</resources>

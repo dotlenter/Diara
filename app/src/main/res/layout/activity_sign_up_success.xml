@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="80dp"
+    android:paddingEnd="80dp"
+    tools:context=".SignUpSuccess">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registered_successfully"
+        android:layout_above="@id/imgCheck"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans_semibold"
+        />
+
+    <ImageView
+        android:id="@+id/imgCheck"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_check" />
+    <Button
+        android:id="@+id/btnToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_me_in"
+        android:background="@drawable/default_button"
+        android:textColor="@color/white"
+        android:layout_below="@id/imgCheck"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/open_sans_semibold"
+        />
+
+</RelativeLayout>

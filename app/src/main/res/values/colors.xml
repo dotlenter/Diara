@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#18A779</color>
+    <color name="diaraDefault">#18A779</color>
+    <color name="diaraFade">#64C49E</color>
+    <color name="black">#000</color>
+    <color name="defaultEditext">#d3e4dd</color>
+    <color name="white">#fff</color>
+    <color name="slightWhite">#ECECEC</color>
+    <color name="nearWhite">#F1F1F1</color>
+    <color name="starColor">#FFEB3B</color>
+    <color name="standarduser">#979797</color>
+    <color name="semiverified">#C0A828</color>
+    <color name="fullyverified">#20E2A3</color>
+    <color name="red">#F8314D</color>
+    <color name="nearBlack">#636262</color>
+    <color name="diaraBlue">#1892A7</color>
+</resources>

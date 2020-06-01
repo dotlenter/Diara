@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <View
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:background="@color/slightWhite"
+            android:layout_centerHorizontal="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@color/diaraDefault" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="John Mar Lorenzo"
+                android:layout_toEndOf="@+id/userImage"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:id="@+id/textUsername"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textUsername"
+                android:layout_alignStart="@id/textUsername"
+                android:layout_marginTop="5dp"
+                android:text="10/24/2019 at 7:44AM"
+                android:textSize="10sp"
+                android:id="@+id/textCommentDate"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCommentBody"
+                android:layout_below="@id/textCommentDate"
+                android:layout_alignStart="@id/textUsername"
+                android:layout_marginTop="10dp"
+                android:text="@string/dummy_prod"
+                android:textAlignment="viewStart"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

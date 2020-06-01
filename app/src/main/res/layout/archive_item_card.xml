@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:outlineAmbientShadowColor="@color/nearBlack"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardRelativeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <ImageView
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/diaraDefault"
+                android:layout_above="@id/detailContainer"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageContainer"
+                android:layout_alignEnd="@id/imageContainer"
+                android:background="@drawable/default_white_circular"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+                <TextView
+                    android:id="@+id/textNumLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:maxLines="1"
+                    android:text="1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/icHeart"
+                    />
+                <ImageView
+                    android:id="@+id/icHeart"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_heart"
+                    android:backgroundTint="@color/red"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/textItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is the item title"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_toEndOf="@+id/sellerImage"
+                    />
+                <TextView
+                    android:id="@+id/textItemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is the Description..."
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_below="@id/textItemTitle"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/sellerImage"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sellerImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/me" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSkip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/dividerView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/icon_close"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="#22ED7563" />
+
+                <View
+                    android:id="@+id/dividerView"
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/dividerView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/icon_check_outline"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="#226FE2B3" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/diaraDefault"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="₱1,000.00"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
